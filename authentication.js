@@ -20,7 +20,8 @@ const database = firebase.database();
 function signInFormFunc(email, password) {
   auth.signInWithEmailAndPassword(email, password)
     .then((userCredential) => {
-      window.location.href = './ui.html';
+      // window.location.href = './ui.html';
+      window.location.replace("./ui.html");
       signInForm.reset();
       var user = userCredential.user;
       // ...
@@ -55,7 +56,8 @@ let signInForm = document.getElementById('signInForm');
 function signUpFormFunc(email, password) {
   auth.createUserWithEmailAndPassword(email, password)
     .then((userCredential) => {
-      window.location.href = './ui.html';
+      // window.location.href = './ui.html';
+      window.location.replace("./ui.html");
       signUpForm.reset();
       var user = userCredential.user;
     })
@@ -83,9 +85,9 @@ let signUpForm = document.getElementById('signUpForm');
 
 function logOut() {
   auth.signOut().then(() => {
-    window.location.href = 'index.html';
+    // window.location.href = 'index.html';
+    window.location.replace("./index.html");
   }).catch((error) => {
-    // An error happened.
   });
 }
 
