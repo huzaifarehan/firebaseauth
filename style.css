@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.808);
+}
+/* #form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+#message{
+    width: 78%;
+
+}
+#messages{
+    margin-bottom: 5rem;
+    display: block;
+    color: blanchedalmond;
+}
+.senderBox{
+    margin: 1rem 0 0 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.sender{
+    margin: 0;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: rgb(14, 118, 204);
+    /* float: right; */
+    /* display: block; */
+    /* display: flex;
+    justify-content: flex-end; */
+    
+}
+.senderUser{
+    display: block;
+}
+.receiverBox{
+    margin: 1rem 3rem 0rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.receiver{
+    margin: 0;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 2%;
+    background-color: rgb(14, 122, 95);
+}
+.receiverUser{
+    display: block;
+}
